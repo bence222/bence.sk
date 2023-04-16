@@ -1,0 +1,70 @@
+/* Nastavení stylu pro celou stránku */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Nastavení stylu pro záhlaví stránky */
+header {
+    background-color: #dddddd;
+
+
+    padding: 20px;
+}
+
+/* Nastavení stylu pro nadpis na záhlaví stránky */
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Nastavení stylu pro navigační menu na záhlaví stránky */
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+header nav ul li a {
+      color: black;
+    text-decoration: none;
+}
+
+/* Nastavení stylu pro hlavní obsah stránky */
+main {
+    padding: 20px;
+}
+
+/* Nastavení stylu pro patičku stránky */
+footer {
+    background-color: #dddddd;
+
+    padding: 10px;
+    text-align: center;
+    margin-top: 550px;
+
+}
+.ig a {
+  text-align: center;
+  font-size: 80px;
+	position: relative;
+	color: orange;
+	text-decoration: none;
+  color: orange;
+}
+.yt a {
+  text-align: center;
+  color: orange;
+}
