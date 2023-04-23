@@ -6,14 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="follow, index">
 <meta name="googlebot" content="index snippet , archive ">
+<meta name="author" content="Bence Lukáč">
+ <meta name="description" content="welcome to my website">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="animate/animate.css">
 	 <link rel="stylesheet" href="animate/animate.min.css">
 
 </head>
 <style>
-  /* Nastavení stylu pro celou stránku */
-  body {
+
+body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
@@ -31,32 +33,32 @@
   }
 
 
-  header {
+header {
       background-color: #0B60FF;
 
 
       padding: 20px;
   }
 
-  header h1 {
+header h1 {
       margin: 0;
       font-size: 36px;
   }
 
 
-  header nav ul {
+header nav ul {
       margin: 0;
       padding: 0;
       list-style: none;
   }
 
-  header nav ul li {
+header nav ul li {
       display: inline-block;
       margin-right: 20px;
 
   }
 
-  header nav ul li a {
+header nav ul li a {
         color: white;
       text-decoration: none;
   }
@@ -64,7 +66,7 @@ header nav ul li a:hover{
   color:black;
 }
 
-  main {
+main {
       padding: 20px;
   }
 h1:hover {
@@ -72,38 +74,19 @@ h1:hover {
 }
 
   footer {
-      background-color: #dddddd;
+      background-color: black;
       padding: 10px;
       text-align: center;
       bottom: 200px;
       position:static;
+     	color: #0B60FF;
+  }
 
-  }
-	footer:hover{
-		color: #0B60FF;
-   background-color: black;
-	}
-  .ig {
-    text-align:center;
-  }
-  .ig a {
-    font-size: 80px;
-  	position: relative;
-  	color: orange;
-  	text-decoration: none;
-    color: orange;
-    text-align:center;
-    margin-top:50px;
-
-  }
-  .yt a {
-    text-align: center;
-    color: orange;
-  }
   .wrapper{
-    text-align:center;
     position:relative;
     bottom:40px;
+
+
 
   }
 .wrapper .button{
@@ -115,8 +98,7 @@ background-color:#fff;
 margin 0 5px;
 cursor:pointer;
 box-shadow: 0px 10px 10px rgba (0,0,0,0.1);
-transition:all 0.3s ease-out
-overflow:hidden;
+transition:all 0.3s ease-out;
 margin:80px;
 
 }
@@ -196,15 +178,17 @@ color:#1DB954
 /*MEDIA PRIKAZ*/
 @media only screen and (max-width: 400px) {
 body {
- overflow-x:hidden;
+ overflow:hidden;
 
  background-image: url(obr/ako.jpg);
 
 }
-footer {
-color: #0B60FF;
-background-color: black;
-	}
+.wrapper{
+	position:relative;
+	bottom:40px;
+  right: 35px;
+
+}
 
 }
 
@@ -228,7 +212,7 @@ background-color: black;
 		</nav>
 	</header>
 
-<div class="col-lg-4 col-md-4 wow fadeInDown data-wow-delay"="10s">
+<div class="col-lg-4 col-md-4 wow zoomInUp data-wow-delay"="10s">
 <h1>Welcome</h1>
 </div>
 
@@ -284,9 +268,6 @@ background-color: black;
 </div>
 
 
-<div class="obrazok">
-
-</div>
 
 
 
@@ -321,3 +302,4 @@ background-color: black;
 
 </body>
 </html>
+
