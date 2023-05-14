@@ -93,7 +93,7 @@ text-align:center;
 border-radius:50px;
 box-sizing:border-box;
 line-height:60px;
-
+transition: 0.3s ease-out;
 }
 .wrapper .button :hover {
   width:200px;
