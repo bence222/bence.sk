@@ -307,12 +307,20 @@ section {
 
 }
 @media only screen and (max-width: 300px){
+.omne_text{
+width: 75%;
+}
+}
+@media only screen and (max-width: 300px){
 .wrapper{
   position: inherit;
 }
 .omne_img img{
-  max-width: 250px;
-  max-height: 200px;
+  max-width: 200px;
+  max-height: 120px;
+}
+.omne_text{
+  width: 75%;
 }
 
 }
