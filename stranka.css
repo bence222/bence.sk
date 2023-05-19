@@ -311,18 +311,17 @@ section {
     max-width: 200px;
     max-height: 120px;
   }
+  .omne_text{
+  width: 75%;
+  }
+  .vibration{
+    font-size: 40px;
+  }
+  .glow{
+    font-size: 30px;
+  }
 }
-@media only screen and (max-width: 300px){
-.omne_text{
-width: 75%;
-}
-.vibration{
-  font-size: 40px;
-}
-.glow{
-  font-size: 30px;
-}
-}
+
 @media only screen and (max-width: 300px){
 .wrapper{
   position: inherit;
