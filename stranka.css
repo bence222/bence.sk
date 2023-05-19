@@ -310,6 +310,9 @@ section {
 .omne_text{
 width: 75%;
 }
+.glow{
+  font-size: 30px;
+}
 }
 @media only screen and (max-width: 300px){
 .wrapper{
@@ -335,10 +338,5 @@ body {
 	position:relative;
 	bottom:40px;
   right: 35px;
-
-}
-
-
-
 
 }
