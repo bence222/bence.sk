@@ -8,7 +8,7 @@ body {
       overflow-x: hidden;
 			max-height: 900px;
       display:grid;
-			background-image: url(obr/ako.jpg);
+
 			max-width: 1920px;
 			max-height: 1080px;
 
@@ -18,6 +18,10 @@ body {
 
 header {
       background-color: #0B60FF;
+      background-size: cover;
+      position: fixed;
+      width: 100%;
+
 
 
       padding: 20px;
@@ -55,8 +59,72 @@ main {
 h1:hover {
 	color: #0B60FF;
 }
+.stred{
+max-width: 1920px;
+background-image: url(obr/neviem.jpg);
+min-height: 720px;
 
-  footer {
+}
+.spodne{
+max-width: 1920px;
+min-height: 720px;
+background-image: url(obr/nie.jpg);
+color: white;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+
+}
+.dolne{
+  max-width: 1920px;
+  min-height: 590px;
+  color: white;
+background-image: url(obr/neviem.jpg);
+  color: black;
+
+}
+.omne_container{
+
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ margin-top: 100px;
+min-height: 400px;
+display: flex;
+}
+
+.omne_text{
+ width: 50%;
+ text-align: justify;
+ line-height: 20px;
+ font-size: 17px;
+ padding-left: 50px;
+
+}
+.omne_text b {
+  color: gray;
+}
+.omne_img{
+  width: 50%;
+}
+.omne_container img{
+  width: 500px;
+  height: 300px;
+  padding-left: 50px;
+}
+
+.css span{
+  padding-top: 30px;
+
+}
+.python{
+  padding-top: 30px;
+}
+.php{
+  padding-top: 30px;
+}
+footer {
       background-color: black;
       padding: 10px;
       text-align: center;
@@ -66,8 +134,8 @@ h1:hover {
   }
 
   .wrapper{
-    position:relative;
-    bottom:40px;
+padding-top: 50px;
+
 
 
 
@@ -153,12 +221,96 @@ color:#1DB954
 
 }
 
+section {
+    height: 100vh;
+    font-size: 100px;
+    font-weight: bold;
+    transition: all 200ms;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    cursor: pointer;
+
+    padding: 20px;
+}
+
+/*Vibration*/
+.vibration span{
+    transition: all 500ms;
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    margin-right: 10px;
+    text-shadow: 1px 2px 3px #000000;
+}
+.vibration span:hover{
+    filter: blur(3px);
+    animation: vibrate 50ms linear infinite forwards;
+}
+/*VIBRATE ANIMACIE*/
+@keyframes vibrate{
+    0% {
+        transform: translateX(-1px) translateY(1px);
+    }
+    100% {
+        transform: translateX(1px) translateY(-2px);
+    }
+}
+.glow{
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+.glow span {
+    color: #fff;
+    transition: all 300ms;
+}
+.glow span:hover {
+    text-shadow: 0 0 10px #0698a5,
+                 0 0 30px #0698a5,
+                 0 0 80px #0698a5,
+                 0 0 120px #0698a5,
+                 0 0 200px #0698a5;
+}
+.spodne img:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+/*SHAKE ANIMACIE*/
+
+@keyframes shake {
+0% { transform: translate(1px, 1px) rotate(0deg); }
+10% { transform: translate(-1px, -2px) rotate(-1deg); }
+20% { transform: translate(-3px, 0px) rotate(1deg); }
+30% { transform: translate(3px, 2px) rotate(0deg); }
+40% { transform: translate(1px, -1px)rotate(1deg); }
+50% { transform: translate(-1px, 2px)rotate(-1deg); }
+60% { transform: translate(-3px, 1px)rotate(0deg); }
+70% { transform: translate(3px, 1px)rotate(-1deg); }
+80% { transform: translate(-1px, -1px)rotate(1deg); }
+90% { transform: translate(1px, 2px)rotate(0deg); }
+100% { transform: translate(1px, -2px)rotate(-1deg); }
+}
 /*MEDIA PRIKAZ*/
+@media only screen and (max-width: 1337px){
+.omne_img{
+  flex-direction: column;
+}
+.omne_container{
+  display: block;
+}
+
+
+
+
+}
 @media only screen and (max-width: 400px) {
 body {
  overflow-x:hidden;
 
- background-image: url(obr/ako.jpg);
+
 
 }
 .wrapper{
@@ -167,5 +319,8 @@ body {
   right: 35px;
 
 }
+
+
+
 
 }
