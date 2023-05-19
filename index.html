@@ -23,15 +23,22 @@
 
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+  <nav>
 
 
+				<li><a  data-scroll data-options='{"easing": "easeOutQuint"}' href="#home">Domov</a></li>
+				<li> <a data-scroll data-options='{"easing": "easeOutQuint"}' href="#omne">O mne</a> </li>
+				<li> <a data-scroll data-options='{"easing": "easeOutQuint"}' href="#dolne">Informacie</a> </li>
+
+  </nav>
 			</ul>
 		</nav>
 	</header>
+<div class="stred" id="home">
+
 
 <div class="col-lg-4 col-md-4 wow zoomInUp data-wow-delay"="10s">
-<h1>Welcome</h1>
+
 </div>
 
 
@@ -90,11 +97,91 @@
 
 
 
+</div>
+
+
+
+<div class="spodne" id="omne">
+<div class="omne_container">
+
+<div class="omne_text">
+	<div class="glow">
+		<div class="col-lg-4 col-md-4 wow bounceInRight data-wow-delay"="0.3s">
+
+
+		 <span>O</span> 	<span>M</span> <span>N</span> <span>E</span>
+	</div>
+			</div>
+	<p>Programujem v HTML, CSS a Pythone.Tieto tri jazyky tvoria základ moderného webového vývoja a s ich pomocou je možné vytvárať dynamické, interaktívne a vizuálne atraktívne webové stránky a aplikácie.
+<br>
+<br>
+	<b>HTML (Hypertext Markup Language)</b>	 je základným jazykom pre tvorbu webových stránok. Pomocou HTML definujeme štruktúru a obsah stránky.
+<br>
+<br>
+<b> CSS (Cascading Style Sheets)</b> je jazyk, ktorý sa používa na definovanie vzhľadu a štýlu webových stránok vytvorených v HTML. Pomocou CSS môžeme meniť farby, písma, veľkosti a rozloženie elementov na stránke.
+
+
+	<br>
+	<br>
+<b>	Python </b> je vysokoúrovňový interpretovaný programovací jazyk, ktorý sa používa na širokú škálu aplikácií.
+<br>
+<br>
+<b>PHP (Hypertext Preprocessor) </b> je skriptovací jazyk, ktorý je špecificky navrhnutý na vývoj webových aplikácií. PHP umožňuje vytvárať dynamické webové stránky, ktoré sa prispôsobujú interakcii s používateľom. Môže spracovávať dáta z formulárov, komunikovať s databázami a generovať dynamický obsah na základe konkrétnych podmienok.
+</p>
+</div>
+
+<div class="omne_img">
+
+
+	<img src="obr/html.jpg" alt="daco">
+</div>
+</div>
+
+
+</div>
+
+
+<div class="dolne" id="dolne">
+
+	<div class="dolne_text">
+		<section class="vibration-demo">
+		        <div class="vibration">
+<a href="https://www.w3schools.com/html/default.asp">
+							  <span>H</span><span>T</span><span>M</span><span>L</span>
+</a>
+<br>
+<div class="css">
+<a href="https://www.w3schools.com/css/default.asp">
+<span>C</span><span>S</span><span>S</span>
+</a>
+</div>
+<div class="python">
+	<a href="https://www.w3schools.com/python/default.asp">
+<span>P</span><span>Y</span><span>T</span><span>H</span><span>O</span><span>N</span>
+
+	</a>
+
+</div>
+<div class="php">
+<a href="https://www.w3schools.com/php/default.asp">
+	<span>P</span><span>H</span><span>P</span>
+</a>
+
+</div>
+
+
+
+						</div>
+		</section>
+	</div>
+
+
+</div>
 
 
   <footer>
 		<p>&copy; 2023 My website
-  
+
 		</p>
 	</footer>
 
@@ -118,6 +205,18 @@
   		 new WOW().init();
   	 }
    </script>
+
+	 <script src="js/smooth-scroll.js"></script>
+<script>
+    smoothScroll.init({
+     speed: 1500,
+     easing: 'easeInOutCubic',
+     offset: 0,
+     updateURL: true,
+     callbackBefore: function (toggle, anchor) {},
+     callbackAfter: function (toggle, anchor) {}
+    });
+</script>
 
 
 </body>
