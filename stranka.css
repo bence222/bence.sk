@@ -306,9 +306,18 @@ section {
 
 
 }
+@media only screen and (max-width: 400px){
+  .omne_img img{
+    max-width: 200px;
+    max-height: 120px;
+  }
+}
 @media only screen and (max-width: 300px){
 .omne_text{
 width: 75%;
+}
+.vibration{
+  font-size: 40px;
 }
 .glow{
   font-size: 30px;
@@ -318,10 +327,7 @@ width: 75%;
 .wrapper{
   position: inherit;
 }
-.omne_img img{
-  max-width: 200px;
-  max-height: 120px;
-}
+
 .omne_text{
   width: 75%;
 }
@@ -338,5 +344,10 @@ body {
 	position:relative;
 	bottom:40px;
   right: 35px;
+
+}
+
+
+
 
 }
