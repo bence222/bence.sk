@@ -306,10 +306,14 @@ section {
 
 
 }
+
+
+
 @media only screen and (max-width: 400px){
   .omne_img img{
-    max-width: 200px;
-    max-height: 120px;
+    max-width: 295px;
+    max-height: 178px;
+    padding-bottom: 20px;
   }
   .omne_text{
   width: 75%;
@@ -320,7 +324,7 @@ section {
   .glow{
     font-size: 30px;
   }
-}
+
 
 @media only screen and (max-width: 300px){
 .wrapper{
