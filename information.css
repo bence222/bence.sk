@@ -14,6 +14,15 @@ nav{
     position: fixed;
     z-index: 1;
 }
+.navlave{
+  flex: 1;
+  padding: 20px;
+}
+.navprave{
+  flex: 1;
+
+
+}
 nav a {
 
   text-decoration: none;
@@ -133,24 +142,49 @@ filter: hue-rotate(279deg);
 }
 }
 #naspat {
- position: relative;
- left: 1050px;
+ float: right;
+
+
 
 }
 }
+@media only screen and (max-width: 450px){
+  #daco {
+    right: 30px;
+  }
+}
 @media only screen and (max-width: 500px){
+  .navlave{
+    display: flex;
+    padding: 0;
+  }
+  .navprave{
+    padding-right: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    }
+
+.navprave a {
+  font-size: 15px;
+}
   .dalsie{
     display: block;
   }
+  #daco{
+top: 0;
+  }
+#ubuntu{
+  padding: 0;
+  left: 115px;
+  bottom: 0;
+  top: 200px;
+
 }
-#daco{
-  left: 20px;
 }
+
 @media only screen and (max-width: 500px){
-#naspat{
-  position: relative;
-  left: 380px;
-}
+
 nav{
   height: 65px;
 }
@@ -172,12 +206,6 @@ nav{
 }
 .text p {
   font-size: 25px;
-}
-#naspat{
-  position: relative;
-  left: 35px;
-  font-size: 17px;
-  top: 2px;
 }
 
 
