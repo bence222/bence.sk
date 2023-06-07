@@ -79,19 +79,20 @@ z-index: 0;
 .dalsie{
   width: 100%;
   min-height: 1000px;
-  display: flex;
+ display: flex;
   justify-content: center;
   align-items: center;
+
 
 }
 .lave{
   flex: 1;
-
+  display: flex;
 
 }
 .prave{
   flex: 1;
-
+ display: flex;
 
 }
 .prave img{
@@ -105,27 +106,6 @@ z-index: 0;
   font-size: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .zaciatok p{
 background: linear-gradient(90deg,#fadb61 0%, #ff006a 100%);
 -webkit-background-clip: text;
@@ -133,6 +113,13 @@ background: linear-gradient(90deg,#fadb61 0%, #ff006a 100%);
 }
 .zaciatok p{
   animation: hueRotate 7s alternate infinite;
+}
+#ubuntu{
+  font-size: 40px;
+  color: white;
+  padding: 130px;
+ position: relative;
+ bottom: 50px;
 }
 @keyframes hueRotate{
  0% {
@@ -147,21 +134,53 @@ filter: hue-rotate(279deg);
 }
 #naspat {
  position: relative;
- left: 900px;
-
-
+ left: 1050px;
 
 }
-@media only screen and (max-width: 400px){
+}
+@media only screen and (max-width: 500px){
+  .dalsie{
+    display: block;
+  }
+}
+#daco{
+  left: 20px;
+}
+@media only screen and (max-width: 500px){
+#naspat{
+  position: relative;
+  left: 380px;
+}
+nav{
+  height: 65px;
+}
 .stred{
-   width: 400px;
- }
+  width: 100%;
+}
+.zaciatok p {
+  font-size: 25px;
+}
+.dalsie{
+      display: block;
+}
 .lave{
   flex-direction: column;
 }
-.prave{
+.prave {
   flex-direction: column;
+
 }
+.text p {
+  font-size: 25px;
+}
+#naspat{
+  position: relative;
+  left: 35px;
+  font-size: 17px;
+  top: 2px;
+}
+
+
 
 
 
