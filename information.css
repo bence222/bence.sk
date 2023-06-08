@@ -123,6 +123,23 @@ background: linear-gradient(90deg,#fadb61 0%, #ff006a 100%);
 .zaciatok p{
   animation: hueRotate 7s alternate infinite;
 }
+footer{
+ width: 100%;
+ height: 70px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: black;
+ color: white;
+}
+footer p{
+  letter-spacing: 2px;
+}
+
+
+
+
+
 #ubuntu{
   font-size: 40px;
   color: white;
@@ -148,6 +165,7 @@ filter: hue-rotate(279deg);
 
 }
 }
+
 @media only screen and (max-width: 450px){
   #daco {
     right: 30px;
@@ -164,7 +182,9 @@ filter: hue-rotate(279deg);
     align-items: center;
     display: flex;
     }
+nav{
 
+}
 .navprave a {
   font-size: 15px;
 }
@@ -182,14 +202,39 @@ top: 0;
 
 }
 }
+@media only screen and (max-width: 661px){
+nav{
+  max-height: 70px;
+}
+ .navlave{
+   display: flex;
+   align-items: center;
+ }
+.navprave{
 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+}
 @media only screen and (max-width: 500px){
-
+nav a{
+  padding: 10px;
+}
 nav{
   height: 65px;
 }
 .stred{
   width: 100%;
+}
+#naspat{
+  padding-left: 50px;
+
+}
+.navprave{
+  padding: 0;
 }
 .zaciatok p {
   font-size: 25px;
@@ -207,8 +252,13 @@ nav{
 .text p {
   font-size: 25px;
 }
+.text{
+  padding: 40px;
+}
+.navlave{
+ align-items: center;
 
-
+}
 
 
 
